@@ -21,11 +21,11 @@ function AdviceApp() {
     }
 
     const fetchAdvice = () => {
-        fetch(`https://api.adviceslip.com/advice`)
+        return fetch(`https://api.adviceslip.com/advice`)
             .then(res => res.json())
             .then(
-                (result) => {
-                    setQuote(result.slip)
+                ({slip}) => {
+                    setQuote(slip)
                     setLoading(false);
                 },
 
@@ -46,9 +46,9 @@ function AdviceApp() {
                 <img src={patternDividerSvg}/>
             </div>
 
-            <a className={'dice'} onClick={() => handleClick()}>
+            <button className={'dice'} onClick={handleClick}>
                 <img src={diceSvg} className={loading ? 'loading' : ''}/>
-            </a>
+            </button>
         </div>
     )
 }
