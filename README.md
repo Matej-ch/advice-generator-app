@@ -1,6 +1,7 @@
 # Frontend Mentor - Advice generator app solution
 
-This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db).
+This is a solution to
+the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db).
 
 ## Table of contents
 
@@ -27,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/design.png)
+![](./screenshot/Advice.png)
 
 ### Links
 

@@ -1,0 +1,64 @@
+.advice {
+
+  display: grid;
+  max-width: 400px;
+  margin: 0 auto;
+  justify-items: center;
+  padding: 2rem;
+  background-color: var(--grayBlue);
+  border-radius: 1rem;
+  position: relative;
+
+  .title {
+    font-size: var(--title-font-size);
+    color: var(--header-text-color);
+    font-weight: 400;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .quote {
+    font-size: var(--quote-font-size);
+    color: var(--text-color);
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .divider {
+    padding: 2rem 0;
+  }
+
+  .dice {
+    background-color: var(--header-text-color);
+    padding: 1.15rem;
+    border-radius: 100%;
+    cursor: pointer;
+    position: absolute;
+    bottom: -30px;
+
+    &:hover {
+      box-shadow: 0 0 40px 1px var(--header-text-color);
+    }
+  }
+
+  .loading {
+    animation: rotation 2s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .advice {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+}
