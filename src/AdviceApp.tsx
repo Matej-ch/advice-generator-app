@@ -37,17 +37,17 @@ function AdviceApp() {
     }
 
     return (
-        <div className="advice">
+        <div className="advice" role="main">
             <h1 className="title">Advice #{quote.id}</h1>
 
             <p className={'quote'}>“{quote.advice}”</p>
 
             <div className={'divider'}>
-                <img src={patternDividerSvg}/>
+                <img src={patternDividerSvg} alt=""/>
             </div>
 
             <button className={'dice'} onClick={handleClick} aria-label="Load new advice">
-                <img src={diceSvg} className={loading ? 'loading' : ''} width='24' height='24'/>
+                <img src={diceSvg} className={loading ? 'loading' : ''} width='24' height='24' alt=""/>
             </button>
         </div>
     )
