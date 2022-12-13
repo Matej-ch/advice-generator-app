@@ -46,8 +46,8 @@ function AdviceApp() {
                 <img src={patternDividerSvg}/>
             </div>
 
-            <button className={'dice'} onClick={handleClick}>
-                <img src={diceSvg} className={loading ? 'loading' : ''}/>
+            <button className={'dice'} onClick={handleClick} aria-label="Load new advice">
+                <img src={diceSvg} className={loading ? 'loading' : ''} width='24' height='24'/>
             </button>
         </div>
     )
